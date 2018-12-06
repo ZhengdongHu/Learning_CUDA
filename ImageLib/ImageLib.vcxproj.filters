@@ -8,21 +8,30 @@
     <Filter Include="mat">
       <UniqueIdentifier>{17a159ce-858b-4a51-b55c-35926fcd0af2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="sort">
+      <UniqueIdentifier>{1ed66f5c-c6a7-4a01-aaaa-301e0397bc28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stitch_common.h" />
-    <ClInclude Include="stitch_common_type.h" />
-    <ClInclude Include="stitch_lib_defs.h" />
-    <ClInclude Include="stitch_logging.h" />
-    <ClInclude Include="mat\mat_proc.h">
+    <ClInclude Include="src\common.h" />
+    <ClInclude Include="src\common_type.h" />
+    <ClInclude Include="src\defs.h" />
+    <ClInclude Include="src\image_lib.h" />
+    <ClInclude Include="src\logging.h" />
+    <ClInclude Include="src\sort\sort.h">
+      <Filter>sort</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mat\mat_proc.h">
       <Filter>mat</Filter>
     </ClInclude>
-    <ClInclude Include="image_lib.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stitch_logging.cpp" />
-    <ClCompile Include="stitch_common.cpp" />
-    <ClCompile Include="mat\mat_proc.cpp">
+    <ClCompile Include="src\common.cpp" />
+    <ClCompile Include="src\logging.cpp" />
+    <ClCompile Include="src\sort\sort.cpp">
+      <Filter>sort</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mat\mat_proc.cpp">
       <Filter>mat</Filter>
     </ClCompile>
   </ItemGroup>
